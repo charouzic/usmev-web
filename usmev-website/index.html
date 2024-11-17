@@ -8,6 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add Content Security Policy Meta Tag -->
+    <!-- Add CSP meta tag only in production (GitHub Pages) -->
+    <script>
+      if (window.location.hostname === 'charouzic.github.io') {
+        document.write('<meta http-equiv="Content-Security-Policy" content="default-src \'self\'; font-src \'self\' https://fonts.gstatic.com; style-src \'self\' https://fonts.googleapis.com;">');
+      }
+  </script>
   </head>
   <body>
     <div id="app"></div>

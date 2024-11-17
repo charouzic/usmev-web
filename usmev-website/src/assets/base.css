@@ -19,6 +19,9 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  /* Custom color for text */
+  --global-text-color: #2E3E4D;
 }
 
 /* semantic color variables for this project */
@@ -30,8 +33,8 @@
   --color-border: var(--vt-c-divider-light-2);
   --color-border-hover: var(--vt-c-divider-light-1);
 
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
+  --color-heading: var(--global-text-color); /* Apply custom text color for headings */
+  --color-text: var(--global-text-color);    /* Apply custom text color for general text */
 
   --section-gap: 160px;
 }
@@ -60,14 +63,14 @@
 
 body {
   min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
+  color: var(--color-text); /* Use global text color */
+  /* background: var(--color-background); */
   transition:
     color 0.5s,
     background-color 0.5s;
   line-height: 1.6;
   font-family:
-    Inter,
+    'Jost', /* Use Jost font globally */
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',

@@ -67,5 +67,6 @@ const emit = defineEmits<{
 
 .btn__label {
   line-height: 1;
+  font-weight: bold;
 }
 </style>

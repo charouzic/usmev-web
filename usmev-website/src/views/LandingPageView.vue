@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import Header from '@/components/Header.vue';
-import Button from '@/components/Button.vue';
+import Header from '@/components/layout/Header.vue';
+import Button from '@/components/common/Button.vue';
+import IntroductionSection from '@/components/sections/IntroductionSection.vue';
 
 // Import the icons
 import helpIcon from '@/assets/icons/potrebuji_pomoc_icon.png';
@@ -15,6 +16,9 @@ const onDonateClick = () => {
   console.log('Navigate to the "Chci darovat" page');
   // Add navigation logic here
 };
+
+const targetVideoSectionId = ''; // ID of the section with the video
+
 </script>
 
 <template>
@@ -34,6 +38,13 @@ const onDonateClick = () => {
       :icon="donateIcon"
       @click="onDonateClick"
     />
+
+    <IntroductionSection
+      title="Nadační fond věnovaný všem, jejichž úsměv zmizel v důsledku onkologického onemocnění."
+      description="Naše stránky Vám pomohou zorientovat se v nelehké situaci způsobené onkologickým onemocněním. Naleznete zde odpovědi na mnoho přirozených otázek, informace o nemoci a jejím průběhu, včetně praktických rad, jak s nemocí žít. Zaměřujeme se na předání zkušeností, doporučení a kontaktů pro zajištění kvality života a chodu rodiny v průběhu léčby."
+      buttonText="Přehrát video: Náš příběh"
+      :targetSectionId="targetVideoSectionId"
+    />
   </main>
 </template>
 
@@ -45,6 +56,5 @@ const onDonateClick = () => {
   align-items: center;
   padding: 1rem;
   min-height: 100vh;
-  background-color: #f5f5f5; /*  Light background color for contrast */
 }
 </style>

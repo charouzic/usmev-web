@@ -36,7 +36,7 @@ const toggleMenu = () => {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: #f8f9fa;
+  /* background: #f8f9fa; */
   font-size: 1rem;
   position: relative;
 }

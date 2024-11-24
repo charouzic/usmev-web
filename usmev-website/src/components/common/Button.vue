@@ -35,6 +35,7 @@ const emit = defineEmits<{
   text-align: center;
   margin: 0.5rem 0;
   transition: background-color 0.2s ease;
+  font-family: 'Jost'
 }
 
 .btn__icon {

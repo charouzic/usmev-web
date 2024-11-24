@@ -47,8 +47,7 @@ defineProps<{
 }
 
 .impact-image {
-  padding-right: 30px; /* Adjust padding as needed */
-  width: 180%; /* Size relative to container */
+  width: 132%; /* Size relative to container */
 }
 
 /* Content Container (Centered Box) */

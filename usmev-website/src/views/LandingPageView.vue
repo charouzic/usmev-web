@@ -4,11 +4,16 @@ import Button from '@/components/common/Button.vue';
 import IntroductionSection from '@/components/sections/IntroductionSection.vue';
 import ClientImpactSection from '@/components/sections/ClientImpactSection.vue';
 import FreeConsultationSection from '@/components/sections/FreeConsultationSection.vue';
+import SupportOptionsSection from '@/components/sections/SupportOptionsSection.vue';
 
 // Import the icons
 import helpIcon from '@/assets/icons/potrebuji_pomoc_icon.png';
 import donateIcon from '@/assets/icons/chci_darovat_icon.png';
 import clientSuccessImage from '@/assets/images/pomohli_jsme.png';
+import optionImage1 from '@/assets/icons/orientace_icon.svg';
+import optionImage2 from '@/assets/icons/odbornici_icon.svg';
+import optionImage3 from '@/assets/icons/sluzby_icon.svg';
+import optionImage4 from '@/assets/icons/prosli_icon.svg';
 
 // Props for the sections
 const introductionProps = {
@@ -36,6 +41,35 @@ const freeConsultationProps = {
   note: "V případě, že se nám nedovoláte, zavoláme vám zpět hned, jak to bude možné.",
 };
 
+const supportOptionsProps = {
+  title: "Nejste na to sami",
+  description: [
+    "Nabízíme kvalitní informace a otevřené srdce.",
+    "Nabízíme prostor k hovoru i společnému mlčení.",
+    "Budeme trpělivě naslouchat.",
+    "Poskytneme svůj čas.",
+    "Pomůžeme utřídit si myšlenky a potřeby.",
+  ],
+  options: [
+    {
+      image: optionImage1,
+      text: "Pomůžeme s orientací v situaci",
+    },
+    {
+      image: optionImage2,
+      text: "Spojíme vás s relevantními odborníky",
+    },
+    {
+      image: optionImage3,
+      text: "Veškeré služby poskytujeme zdarma",
+    },
+    {
+      image: optionImage4,
+      text: "Sami jsme si tím prošli",
+    },
+  ],
+};
+
 const onHelpClick = () => {
   console.log('Navigate to the "Potřebuji pomoc" page');
 };
@@ -44,6 +78,7 @@ const onDonateClick = () => {
   console.log('Navigate to the "Chci darovat" page');
 };
 </script>
+
 
 
 <template>
@@ -67,6 +102,7 @@ const onDonateClick = () => {
     <IntroductionSection v-bind="introductionProps" />
     <ClientImpactSection v-bind="clientImpactProps" />
     <FreeConsultationSection v-bind="freeConsultationProps" />
+    <SupportOptionsSection v-bind="supportOptionsProps" />
   </main>
 </template>
 

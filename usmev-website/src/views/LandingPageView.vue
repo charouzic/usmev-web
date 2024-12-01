@@ -3,6 +3,7 @@ import Header from '@/components/layout/Header.vue';
 import Button from '@/components/common/Button.vue';
 import IntroductionSection from '@/components/sections/IntroductionSection.vue';
 import ClientImpactSection from '@/components/sections/ClientImpactSection.vue';
+import FreeConsultationSection from '@/components/sections/FreeConsultationSection.vue';
 
 // Import the icons
 import helpIcon from '@/assets/icons/potrebuji_pomoc_icon.png';
@@ -10,7 +11,6 @@ import donateIcon from '@/assets/icons/chci_darovat_icon.png';
 import clientSuccessImage from '@/assets/images/pomohli_jsme.png';
 
 // Props for the sections
-
 const introductionProps = {
   title: "Nadační fond věnovaný všem, jejichž úsměv zmizel v důsledku onkologického onemocnění.",
   description:
@@ -28,18 +28,23 @@ const clientImpactProps = {
   },
 };
 
+const freeConsultationProps = {
+  heading: "Konzultace zdarma",
+  subHeading: "každý den",
+  time: "9:00 - 18:00",
+  phone: "+420 739 360 498",
+  note: "V případě, že se nám nedovoláte, zavoláme vám zpět hned, jak to bude možné.",
+};
+
 const onHelpClick = () => {
   console.log('Navigate to the "Potřebuji pomoc" page');
-  // Add navigation logic here
 };
 
 const onDonateClick = () => {
   console.log('Navigate to the "Chci darovat" page');
-  // Add navigation logic here
 };
-
-
 </script>
+
 
 <template>
   <Header />
@@ -58,12 +63,13 @@ const onDonateClick = () => {
       :icon="donateIcon"
       @click="onDonateClick"
     />
-    
 
     <IntroductionSection v-bind="introductionProps" />
     <ClientImpactSection v-bind="clientImpactProps" />
+    <FreeConsultationSection v-bind="freeConsultationProps" />
   </main>
 </template>
+
 
 <style scoped>
 .main {
@@ -75,3 +81,4 @@ const onDonateClick = () => {
   min-height: 100vh;
 }
 </style>
+

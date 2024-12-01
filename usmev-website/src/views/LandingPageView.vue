@@ -5,6 +5,7 @@ import IntroductionSection from '@/components/sections/IntroductionSection.vue';
 import ClientImpactSection from '@/components/sections/ClientImpactSection.vue';
 import FreeConsultationSection from '@/components/sections/FreeConsultationSection.vue';
 import SupportOptionsSection from '@/components/sections/SupportOptionsSection.vue';
+import StorySection from '@/components/sections/StorySection.vue';
 
 // Import the icons
 import helpIcon from '@/assets/icons/potrebuji_pomoc_icon.png';
@@ -77,6 +78,13 @@ const onHelpClick = () => {
 const onDonateClick = () => {
   console.log('Navigate to the "Chci darovat" page');
 };
+
+const storyProps = {
+  title: "Taky jsme si tím prošli. Pusťte si příběh našeho syna",
+  description: "Děkujeme nadačnímu fondu Lidé lidem za zprostředkování a tvorbu videa. Děkujeme Tomášovi Klusovi za propůjčení jeho hlasu a citlivý přístup.",
+  buttonText: "Přehrát video",
+  videoId: "PG_1MlYM5po",
+};
 </script>
 
 
@@ -103,6 +111,7 @@ const onDonateClick = () => {
     <ClientImpactSection v-bind="clientImpactProps" />
     <FreeConsultationSection v-bind="freeConsultationProps" />
     <SupportOptionsSection v-bind="supportOptionsProps" />
+    <StorySection v-bind="storyProps" />
   </main>
 </template>
 

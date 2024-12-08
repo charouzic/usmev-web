@@ -8,6 +8,7 @@ import FreeConsultationSection from '@/components/sections/FreeConsultationSecti
 import SupportOptionsSection from '@/components/sections/SupportOptionsSection.vue';
 import StorySection from '@/components/sections/StorySection.vue';
 import SignPostSection from '@/components/sections/SignPostSection.vue';
+import AboutUsSection from '@/components/sections/AboutUsSection.vue';
 
 
 // Import the icons
@@ -21,6 +22,8 @@ import optionImage4 from '@/assets/icons/prosli_icon.svg';
 import tiziIcon from '@/assets/icons/tizi_icon.svg';
 import cekaIcon from '@/assets/icons/ceka_icon.svg';
 import zivotIcon from '@/assets/icons/zivot_icon.svg';
+import aboutUsImage from '@/assets/images/about_us.svg';
+import signatureImage from '@/assets/icons/signature.svg';
 
 // Props for the sections
 const introductionProps = {
@@ -140,6 +143,18 @@ const signPostProps = {
     },
   ],
 };
+
+const aboutUsProps = {
+  title: 'O nás',
+  description1:
+    'Nadační fond založili manželé Abelovi na základě vlastní trpké zkušenosti s osteosarkomem u jejich syna Kryštofa. Při boji o záchranu synova života sami zjistili, jak nekoordinovaná je nelékařská pomoc — od psychické až po ekonomickou.',
+  description2: 
+    'Jsme tu proto, abychom se pokusili provést vás touto nelehkou cestou a podělili se s vámi o naše obsáhlé zkušenosti.',
+  signatureImage: signatureImage,
+  image: aboutUsImage,
+  buttonText: 'Náš příběh',
+  buttonLink: '/about-us', // Replace with the correct link
+};
 </script>
 
 
@@ -168,6 +183,7 @@ const signPostProps = {
     <SupportOptionsSection v-bind="supportOptionsProps" />
     <StorySection v-bind="storyProps" />
     <SignPostSection v-bind="signPostProps" />
+    <AboutUsSection v-bind="aboutUsProps" />
   </main>
 </template>
 

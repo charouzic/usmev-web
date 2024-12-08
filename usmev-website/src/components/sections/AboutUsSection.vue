@@ -10,6 +10,11 @@ const props = defineProps<{
   buttonText: string;
   buttonLink: string;
 }>();
+
+// Method to handle button click
+const redirectToLink = () => {
+  window.location.href = props.buttonLink;
+};
 </script>
 
 <template>
@@ -32,7 +37,7 @@ const props = defineProps<{
     </div>
 
     <div class="button-container">
-      <button class="action-button" @click="() => (window.location.href = buttonLink)">
+      <button class="action-button" @click="redirectToLink">
         {{ buttonText }}
       </button>
     </div>
@@ -73,7 +78,6 @@ const props = defineProps<{
 }
 
 .signature-image {
-  /* max-width: 200px; */
   height: auto;
   width: 250px;
 }

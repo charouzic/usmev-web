@@ -162,7 +162,6 @@ const toggleCard = (id: number) => {
 
 .card.expanded {
   transform: translateY(-5px);
-  background-color: #F1F4F8;
 }
 
 .card-content {

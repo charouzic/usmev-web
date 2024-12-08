@@ -57,16 +57,19 @@ const toggleCard = (id: number) => {
 <template>
   <section class="faq-section">
     <div class="content">
-      <h1 class="heading"> {{ title }}</h1>
+      <h1 class="heading"> 
+        <span class="decorative-element"></span>
+        {{ title }}</h1>
       <p class="subheading">
         {{ subHeading }}
       </p>
       <p class="help-link">
-        {{ helpText }} <a href="#"> {{ contactLink }}</a>
+        {{ helpText }} <br ><a href="#"> {{ contactLink }}</a>
       </p>
     </div>
 
     <div class="cards">
+      <span class="decorative-element-cards"></span>
       <div
         v-for="card in props.cards"
         :key="card.id"
@@ -120,6 +123,7 @@ const toggleCard = (id: number) => {
   font-weight: bold;
   color: #2e3e4d;
   margin-bottom: 0.5rem;
+  position: relative;
 }
 
 .subheading {
@@ -144,6 +148,7 @@ const toggleCard = (id: number) => {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  position: relative;
 }
 
 .card {
@@ -252,5 +257,29 @@ const toggleCard = (id: number) => {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   width: 100%; /* Ensure it spans full width for centering */
+}
+
+.heading .decorative-element {
+  position: absolute;
+  top: 0;
+  left: -10px; /* Adjust as needed */
+  width: 100px; /* Adjust size */
+  height: 90px;
+  background: url('@/assets/icons/konzultace_decor.svg') no-repeat center;
+  background-size: contain;
+  z-index: -1; /* Send behind the text */
+  opacity: 1; /* Adjust for visibility */
+}
+
+.decorative-element-cards {
+  position: absolute;
+  top: 30%; /* Position relative to the .cards container */
+  right: -30px; /* Adjust for horizontal alignment */
+  width: 100px; /* Adjust size */
+  height: 100px;
+  background: url('@/assets/icons/cards_decor.svg') no-repeat center;
+  background-size: contain;
+  z-index: -1; /* Send behind the cards */
+  opacity: 0.8; /* Adjust visibility */
 }
 </style>

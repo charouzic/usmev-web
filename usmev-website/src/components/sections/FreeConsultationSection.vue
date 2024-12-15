@@ -88,10 +88,10 @@ defineProps<{
   content: '';
   position: absolute;
   right: -30px;
-  top: -40px;
-  width: 100px;
-  height: 100px;
-  background: url('@/assets/icons/phone_decor.svg') no-repeat center;
+  top: -30px;
+  width: 90px;
+  height: 90px;
+  background: url('@/assets/icons/phone_decor.png') no-repeat center;
   background-size: contain;
 }
 

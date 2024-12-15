@@ -127,7 +127,7 @@ defineProps<{
 }
 
 .option-image {
-  width: 110px;
+  width: 130px;
   height: 110px;
   margin-bottom: 0.8rem;
 }

@@ -16,15 +16,15 @@ import FAQSection from '@/components/sections/FAQSection.vue';
 import helpIcon from '@/assets/icons/potrebuji_pomoc_icon.png';
 import donateIcon from '@/assets/icons/chci_darovat_icon.png';
 import clientSuccessImage from '@/assets/images/pomohli_jsme.png';
-import optionImage1 from '@/assets/icons/orientace_icon.svg';
-import optionImage2 from '@/assets/icons/odbornici_icon.svg';
-import optionImage3 from '@/assets/icons/sluzby_icon.svg';
-import optionImage4 from '@/assets/icons/prosli_icon.svg';
-import tiziIcon from '@/assets/icons/tizi_icon.svg';
-import cekaIcon from '@/assets/icons/ceka_icon.svg';
-import zivotIcon from '@/assets/icons/zivot_icon.svg';
-import aboutUsImage from '@/assets/images/about_us.svg';
-import signatureImage from '@/assets/icons/signature.svg';
+import optionImage1 from '@/assets/icons/orientace_icon.png';
+import optionImage2 from '@/assets/icons/odbornici_icon.png';
+import optionImage3 from '@/assets/icons/sluzby_icon.png';
+import optionImage4 from '@/assets/icons/prosli_icon.png';
+import tiziIcon from '@/assets/icons/tizi_icon.png';
+import cekaIcon from '@/assets/icons/ceka_icon.png';
+import zivotIcon from '@/assets/icons/zivot_icon.png';
+import aboutUsImage from '@/assets/images/about_us.png';
+import signatureImage from '@/assets/icons/signature.png';
 
 // Props for the sections
 const introductionProps = {

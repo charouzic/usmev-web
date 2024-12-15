@@ -90,7 +90,7 @@ const redirectToLink = () => {
 }
 
 .about-image {
-  width: 250px;
+  width: 230px;
   height: 220px;
 }
 

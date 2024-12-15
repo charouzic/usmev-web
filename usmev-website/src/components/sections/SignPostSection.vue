@@ -186,8 +186,8 @@ const toggleCard = (id: number) => {
 }
 
 .card-image {
-  width: 80px; /* Adjust as necessary */
-  height: 80px; /* Adjust as necessary */
+  width: 100px; /* Adjust as necessary */
+  height: 100px; /* Adjust as necessary */
   margin: 1rem 0; /* Add space above and below */
 }
 

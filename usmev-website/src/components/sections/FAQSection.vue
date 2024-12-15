@@ -92,7 +92,7 @@
   right: 30px; /* Position it to the right side */
   width: 70px; /* Adjust size */
   height: 70px; /* Adjust size */
-  background: url('@/assets/icons/phone_decor.svg') no-repeat center;
+  background: url('@/assets/icons/phone_decor.png') no-repeat center;
   background-size: contain;
   z-index: 2; /* Ensure it stays behind the text */
   opacity: 1; /* Adjust visibility as needed */

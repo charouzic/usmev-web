@@ -9,6 +9,7 @@ import SupportOptionsSection from '@/components/sections/SupportOptionsSection.v
 import StorySection from '@/components/sections/StorySection.vue';
 import SignPostSection from '@/components/sections/SignPostSection.vue';
 import AboutUsSection from '@/components/sections/AboutUsSection.vue';
+import FAQSection from '@/components/sections/FAQSection.vue';
 
 
 // Import the icons
@@ -155,6 +156,35 @@ const aboutUsProps = {
   buttonText: 'Náš příběh',
   buttonLink: '/about-us', // Replace with the correct link
 };
+
+const faqProps = {
+  title: "Nejčastější dotazy",
+  subtitle: "Máte dotaz?",
+  linkText: "Pomůžeme vám.",
+  linkUrl: "/contact",
+  faqs: [
+    {
+      id: 1,
+      question: "Jak zajistit žádanku na sanitku - kdo ji vypíše?",
+      answer:
+        "Zdravotní přeprava nemocného je hrazena zdravotní službou výhradně v případě, že zdravotní stav pojištěnce neumožňuje přepravu běžným způsobem bez použití zdravotnické dopravní služby (sanitky). Odůvodnění pro přepravu musí být tedy konkrétně popsána.",
+    },
+    {
+      id: 2,
+      question: "Co znamená druhý názor?",
+      answer:
+        "Druhý názor znamená možnost požádat jiného odborníka o posouzení diagnózy nebo návrhu léčby.",
+    },
+    {
+      id: 3,
+      question: "Jak získat správné informace o pracovištích, kde se rakovina léčí?",
+      answer:
+        "Správné informace o lékařských pracovištích najdete v doporučeních od lékařů, specializovaných centrech a online zdrojích.",
+    },
+  ],
+  buttonText: "Zobrazit více",
+  buttonLink: "/faqs",
+};
 </script>
 
 
@@ -184,6 +214,7 @@ const aboutUsProps = {
     <StorySection v-bind="storyProps" />
     <SignPostSection v-bind="signPostProps" />
     <AboutUsSection v-bind="aboutUsProps" />
+    <FAQSection v-bind="faqProps" />
   </main>
 </template>
 
